@@ -42,7 +42,7 @@ const Herosection = () => {
 
 
 
-        <div className="mt-40 px-6 text-center flex justify-between items-center ssm:flex-col lg:flex-row"  id="projects-preview">
+        <div className="mt-40 px-6 text-center flex justify-between items-center ssm:flex-col lg:flex-row  text-center"  id="projects-preview">
 
         <div>
         <h2 className="text-2xl font-bold mb-4">My Projects</h2>
