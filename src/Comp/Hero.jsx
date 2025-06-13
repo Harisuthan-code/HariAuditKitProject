@@ -42,29 +42,29 @@ const Herosection = () => {
 
 
 
-        <div className="mt-40 px-6 text-center flex justify-between items-center ssm:flex-col lg:flex-row  text-center"  id="projects-preview">
+        <div
+  className="min-h-screen flex items-center justify-center  px-2"
+  id="projects-preview"
+>
+  <div className="text-center">
+    <h2 className="text-2xl font-bold">My Projects</h2>
 
-        <div>
-        <h2 className="text-2xl font-bold mb-4">My Projects</h2>
-        
-        <p className="text-white-700 max-w-2xl mx-auto">
-            I love turning ideas into working decentralized apps. Here are some real-world Web3 projects I’ve built using Solidity, React,foundry , Hardhat, and smart contract security principles.
-        </p>
-        
-        <Link to="/project">
-            <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">
-            See My Projects →
-            </button>
-        </Link>
-        </div>
+    <p className="text-white-700 max-w-2xl mx-auto">
+      I love turning ideas into working decentralized apps. Here are some real-world Web3 projects I’ve built using Solidity, React, Foundry, Hardhat, and smart contract security principles.
+    </p>
 
-        </div>
-    
-    
-
+    <Link to="/project">
+      <button className="mt-6 px-6 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300">
+        See My Projects →
+      </button>
+    </Link>
+  </div>
+</div>
 
 
-    <section id="skills" className="mt-40 px-6 text-center">
+
+
+    <section id="skills" className="mt-20 px-6 text-center">
     <h2 className="text-2xl font-bold mb-6 border-b-4 border-blue-600 inline-block pb-2">My Skills</h2>
     
 <div className="flex flex-wrap justify-around max-w-6xl mx-auto gap-8 px-4 mt-10">
@@ -130,24 +130,6 @@ const Herosection = () => {
     Send Me an Email
   </a>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </div>
