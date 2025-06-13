@@ -59,13 +59,7 @@ const Herosection = () => {
         </div>
 
 
-        <div>
-
-            <img src={portfolioimage} className="w-[400px] h-[400px] rounded-full border-4 border-white mt-10 ssm:w-[350px] sm:h-[350px] lg:w-[400px] lg:h-[400px]" alt="yourimage"/>
-
-
-        </div>
-
+    
         </div>
 
 
