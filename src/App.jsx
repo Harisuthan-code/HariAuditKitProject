@@ -9,8 +9,7 @@ import PortfolioPage from "./Comp/Portfolio.jsx";
 import Privacy from "./Comp/Privacy.jsx";
 import SubmitProject from "./Comp/SubmitProject.jsx";
 import { Routes, Route } from "react-router-dom";
-import Terms from "./Comp/Terms and condition.jsx";
-
+import Terms from "./Comp/TermsAndCondition.jsx";
 
 function App() {
   return (
