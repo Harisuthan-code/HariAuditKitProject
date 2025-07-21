@@ -1,15 +1,15 @@
-import About from "./Comp/About";
-import Contact from "./Comp/Contact";
-import Footer from "./Comp/Footer";
-import Hero from "./Comp/Hero";
-import HowItWorks from "./Comp/HowItWorks";
-import MicroAudit from "./Comp/MicroAudit";
-import Navbar from "./Comp/Navbar";
-import PortfolioPage from "./Comp/Portfolio";
-import Privacy from "./Comp/Privacy";
-import SubmitProject from "./Comp/SubmitProject";
+import About from "./Comp/About.jsx";
+import Contact from "./Comp/Contact.jsx";
+import Footer from "./Comp/Footer.jsx";
+import Hero from "./Comp/Hero.jsx";
+import HowItWorks from "./Comp/HowItWorks.jsx";
+import MicroAudit from "./Comp/MicroAudit.jsx";
+import Navbar from "./Comp/Navbar.jsx";
+import PortfolioPage from "./Comp/Portfolio.jsx";
+import Privacy from "./Comp/Privacy.jsx";
+import SubmitProject from "./Comp/SubmitProject.jsx";
 import { Routes, Route } from "react-router-dom";
-import Terms from "./Comp/Terms and condition";
+import Terms from "./Comp/Terms and condition.jsx";
 
 
 function App() {
