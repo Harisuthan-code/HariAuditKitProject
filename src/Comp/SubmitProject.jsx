@@ -6,18 +6,18 @@ const SubmitProject = () => {
     >
       {/* Expectation-setting intro */}
       <p className="mb-10 max-w-3xl text-center text-gray-300 text-lg">
-       <span className="text-bold">Please read carefully before submitting your project for a micro audit</span><br />
-        This service is designed for small to medium smart contract projects, focusing on identifying the most critical and common vulnerabilities.  
-        While we give our full effort to find as many bugs as possible, <strong>this is not a comprehensive audit</strong> and cannot guarantee detection of every issue.<br /><br />
-        If we do not find any bugs, you <strong>do not need to pay anything</strong>. Setting clear and realistic expectations helps us build trust and deliver meaningful results.
+        <span className="font-bold">Please read carefully before submitting your project for a full audit</span><br />
+        This service is tailored for small to medium smart contract projects, focusing on identifying critical vulnerabilities and improving overall security.  
+        While we aim to provide a thorough review, <strong>this is not a formal certification-grade audit</strong> and cannot guarantee detection of every issue.<br /><br />
+        If we do not find any critical bugs, you <strong>do not need to pay anything</strong>. This helps us keep things simple, transparent, and trust-based.
       </p>
 
       <h1 className="text-4xl font-bold mb-8 text-indigo-400">
-        Submit Your Project for Micro Audit
+        Submit Your Project for Full Audit
       </h1>
 
       <p className="mb-6 text-gray-300">
-        Before sending your project for a micro audit, please read the following rules carefully.
+        Before sending your project for a full audit, please read the following rules carefully.  
         Failure to meet these criteria may result in project rejection without review.
       </p>
 
@@ -29,7 +29,7 @@ const SubmitProject = () => {
           Include information on the smart contract functionality and how many lines of Solidity code it contains.
         </li>
         <li>
-          Micro audits are intended for small to medium projects; your code should be under 2000 lines.
+          Audits are intended for small to medium projects; your code should be under 2000 lines.
         </li>
         <li>
           Provide a direct link to your code repository (GitHub, GitLab, etc.).
@@ -43,17 +43,15 @@ const SubmitProject = () => {
       </ul>
 
       <p className="mb-8 text-yellow-400 font-semibold max-w-2xl text-center">
-        <strong>Note:</strong> Payment for micro audits is accepted <u>only</u> in stablecoins — <em>USDC or USDT</em>.  
-        Please be prepared to pay in one of these cryptocurrencies if bugs are found.  
-        <br />
-        <br />
-        <strong>Important:</strong> Please make your payment <u>only</u> in USDC or USDT on the <em>Polygon (MATIC) network</em>.  
-        Use your wallet address as usual, but be sure to send funds on the Polygon network to ensure proper receipt.
+        <strong>Note:</strong> Payment for audits is accepted <u>only</u> in stablecoins — <em>USDC or USDT</em>.  
+        Please be prepared to pay in one of these cryptocurrencies <strong>only if critical bugs are found</strong>.<br /><br />
+        <strong>Important:</strong> Payments must be made <u>only</u> on the <em>Polygon (MATIC) network</em>.  
+        Use your wallet address as usual and ensure the funds are sent on the Polygon network.
       </p>
 
       <p className="mb-10 text-gray-300 max-w-2xl text-center">
-        When you are ready, please send your project details to the email below.  
-        Include the repository link and any relevant notes in your email.
+        When you're ready, send your project details to the email below.  
+        Include your code repository and any relevant notes in your message.
       </p>
 
       <a
