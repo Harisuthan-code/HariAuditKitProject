@@ -28,13 +28,13 @@ const MicroAudit = () => {
     >
       <div className="container mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-indigo-400">
-          Micro Smart Contract Audit
+          Full Smart Contract Audit
         </h2>
         <p className="max-w-2xl mx-auto text-gray-300 mb-10">
-          A <strong>fast security review</strong> for small to medium contracts.
-          Delivered within <strong>48 hours</strong>. This is NOT a full formal audit but
-          a quick check to catch major vulnerabilities before mainnet
-          deployment.
+          A <strong>comprehensive security audit</strong> tailored for small to medium
+          smart contracts. We manually review your code to uncover vulnerabilities
+          and provide clear, actionable fixes. Delivery time depends on code complexity
+          and length, usually within <strong>3 to 7 days</strong>.
         </p>
 
         {/* Features Grid */}
@@ -43,9 +43,11 @@ const MicroAudit = () => {
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4">What’s Included</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>✔ Manual code review</li>
-              <li>✔ Check common vulnerabilities</li>
-              <li>✔ Actionable fixes in report</li>
+              <li>✔ Full manual code review</li>
+              <li>✔ Business logic & edge-case analysis</li>
+              <li>✔ Common & advanced vulnerability checks</li>
+              <li>✔ PDF report with severity-tagged findings</li>
+              <li>✔ Remediation guidance</li>
             </ul>
           </div>
 
@@ -53,9 +55,9 @@ const MicroAudit = () => {
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4">What’s NOT Included</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>✖ Full formal audit</li>
-              <li>✖ Gas optimization report</li>
-              <li>✖ Extensive automated analysis</li>
+              <li>✖ Audits for complex protocols (yet)</li>
+              <li>✖ Formal verification</li>
+              <li>✖ Deep gas optimization</li>
             </ul>
           </div>
 
@@ -63,9 +65,9 @@ const MicroAudit = () => {
           <div className="bg-gray-800 p-6 rounded-lg shadow-md">
             <h3 className="text-xl font-semibold mb-4">Delivery</h3>
             <ul className="text-gray-400 space-y-2">
-              <li>⏳ 48-72 hour turnaround</li>
+              <li>⏳ Typically 3–7 days (depends on code size & complexity)</li>
+              <li>✔ Flexible slot booking</li>
               <li>✔ Pay only if bugs are found</li>
-              <li>✔ Detailed PDF report</li>
             </ul>
           </div>
         </div>
@@ -76,7 +78,7 @@ const MicroAudit = () => {
             onClick={() => handleScroll("home")}
             className="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transition duration-300"
           >
-            Book a Micro Audit
+            Book a Full Audit
           </button>
         </div>
       </div>

@@ -22,15 +22,15 @@ const About = () => {
             About Me
           </h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
-            Hi, I’m Hari — a <span className="font-bold text-indigo-400">Smart Contract Auditor</span> dedicated to making Web3 projects secure and trustworthy.
-            I’ve completed <span className="font-bold text-indigo-400">7+ published audits</span> and discovered
-            <span className="font-bold text-indigo-400"> 6 high-severity vulnerabilities</span> on CodeHawks. My mission is simple:
-            <span className="font-bold text-indigo-400"> protect your protocol before hackers exploit it.</span>
+            Hi, I’m Hari — a <span className="font-bold text-indigo-400">Smart Contract Auditor</span> focused on helping small and medium Web3 projects launch securely and confidently. 
+            I’ve completed <span className="font-bold text-indigo-400">7+ published audits</span> and uncovered 
+            <span className="font-bold text-indigo-400"> 6 high-severity vulnerabilities</span> on CodeHawks. 
+            My mission is to deliver real security — <span className="font-bold text-indigo-400">before exploits happen.</span>
           </p>
           <ul className="space-y-2 text-gray-400">
-            <li>✔ Expertise in Solidity & EVM security best practices</li>
-            <li>✔ Published detailed audit reports with actionable fixes</li>
-            <li>✔ Fast and reliable micro-audits delivered in under 48 - 72 hours</li>
+            <li>✔ Deep expertise in Solidity, EVM security, and audit methodologies</li>
+            <li>✔ Clear, actionable audit reports tailored for founders and developers</li>
+            <li>✔ Fast turnaround — delivery typically within 3–7 days based on code complexity</li>
           </ul>
         </div>
       </div>

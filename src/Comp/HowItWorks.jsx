@@ -1,18 +1,18 @@
-
 const steps = [
   {
     step: "1️⃣ Share Your Code",
-    description: "Send your smart contract code via email",
+    description: "Send us your smart contract repository or files via email",
   },
   {
-    step: "2️⃣ I Review & Audit",
-    description: "Manual security review to catch critical vulnerabilities.",
+    step: "2️⃣ Full Manual Audit",
+    description: "We’ll conduct a deep manual security review tailored to your contract’s complexity.",
   },
   {
-    step: "3️⃣ Get Report in 48 - 72 Hours",
-    description: "Receive a detailed PDF report with fixes and recommendations.",
+    step: "3️⃣ Receive a Detailed Report",
+    description: "You'll get a professional audit report with severity breakdowns, remediation guidance, and mitigation suggestions. Delivery time depends on contract complexity.",
   },
 ];
+
 
 const HowItWorks = () => {
   return (
@@ -22,8 +22,9 @@ const HowItWorks = () => {
           How It Works
         </h2>
         <p className="max-w-2xl mx-auto text-gray-300">
-          A simple and transparent process to secure your smart contract quickly.
-        </p>
+  A straightforward process to help you launch your Web3 project with confidence.
+</p>
+
       </div>
 
       {/* Steps Grid */}

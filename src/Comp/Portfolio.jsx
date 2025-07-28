@@ -5,8 +5,10 @@ const audits = [
   { title: "Bridge contract", high: 3, medium: 0, low: 1, link: "https://drive.google.com/file/d/1NY3fAEGLpkHVgaoDO-k-qcQUbEalso6H/view?usp=drive_link" },
   { title: "Proxy contract", high: 2, medium: 1, low: 3, link: "https://drive.google.com/file/d/1dan-cO2FVtd1T0A74xhdkNHMbc1I74Ev/view?usp=drive_link" },
   { title: "The-predicter Contract", high: 2, medium: 0, low: 1, link: "https://drive.google.com/file/d/1cQNQ0saiFfOv_iCOJY0MwMetkJc5oHiF/view?usp=drive_link" },
-  { title: "(GivingThanks - Codehawks ", high: 1, medium: 0, low: 1, link: "https://drive.google.com/file/d/1lGdtj5yZsSto246GZol3YLRM8k-YfMlf/view?usp=drive_link" },
+  { title: "(GivingThanks - Codehawks)", high: 1, medium: 0, low: 1, link: "https://drive.google.com/file/d/1lGdtj5yZsSto246GZol3YLRM8k-YfMlf/view?usp=drive_link" },
   { title: "CodeHawks Bug Bounty", high: 5, medium: 0, low: 2, link: "https://drive.google.com/file/d/13viM2ByZYxP1Ti7nODwxqmOFPiEI7-pB/view?usp=drive_link" },
+  { title: "( Next Generation Protocol - Code4rena )", high: 1, medium: 1, low: 2, link: "https://drive.google.com/file/d/1ll8DiINmCGpVlbXGtZumiczkOjxmBlsh/view?usp=drive_link" },
+
 ];
 
 const PortfolioPage = () => {
