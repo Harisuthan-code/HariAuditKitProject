@@ -1,84 +1,59 @@
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const NAVBAR_HEIGHT = 64; // adjust if your navbar height differs
+const NAVBAR_HEIGHT = 64;
 
 const Navbar = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const handleScroll = (section) => {
-    setIsOpen(false); // Close mobile menu on link click
+    setIsOpen(false);
 
-    if (location.pathname !== "/") {
-      // Navigate to home first
-      navigate("/", { replace: false });
-
-      setTimeout(() => {
-        window.scrollTo(0, 0); // jump to top immediately
-
-        setTimeout(() => {
-          const el = document.getElementById(section);
-          if (el) {
-            const y = el.getBoundingClientRect().top + window.pageYOffset - NAVBAR_HEIGHT;
-            window.scrollTo({ top: y, behavior: "smooth" });
-          }
-        }, 50);
-      }, 150);
-    } else {
-      // Already on home
-      window.scrollTo(0, 0); // jump to top immediately
-
-      setTimeout(() => {
-        const el = document.getElementById(section);
-        if (el) {
-          const y = el.getBoundingClientRect().top + window.pageYOffset - NAVBAR_HEIGHT;
-          window.scrollTo({ top: y, behavior: "smooth" });
-        }
-      }, 50);
+    const el = document.getElementById(section);
+    if (el) {
+      const y = el.getBoundingClientRect().top + window.pageYOffset - NAVBAR_HEIGHT;
+      window.scrollTo({ top: y, behavior: "smooth" });
     }
   };
 
+  const menuItems = [
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "features", label: "Features" },
+    { id: "buy", label: "Buy" },
+    { id: "contact", label: "Contact" },
+    { id: "terms", label: "Terms & Conditions" },
+    { id: "refund", label: "Refund Policy" }
+  ];
+
   return (
-    <nav className="fixed top-0 w-full bg-gray-900 text-white shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-gray-950 text-white shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <h1 className="text-xl font-bold text-indigo-400">Hari Audit</h1>
+        {/* Brand */}
+        <div className="flex items-center space-x-2">
+          <h1 className="text-2xl font-bold text-blue-400 tracking-tight">HariAuditKit</h1>
+          <span className="text-sm text-gray-400 hidden sm:inline">Smart Contract Security</span>
+        </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-6 text-sm font-semibold">
-          <li>
-            <button onClick={() => handleScroll("home")} className="hover:text-indigo-400">
-              Home
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleScroll("about")} className="hover:text-indigo-400">
-              About
-            </button>
-          </li>
-          <li>
-            <button onClick={() => handleScroll("microaudit")} className="hover:text-indigo-400">
-              Micro Audit
-            </button>
-          </li>
-          <li>
-            <Link to="/portfolio" className="hover:text-indigo-400">
-              Portfolio
-            </Link>
-          </li>
-          <li>
-            <button onClick={() => handleScroll("contact")} className="hover:text-indigo-400">
-              Contact
-            </button>
-          </li>
+        <ul className="hidden md:flex space-x-8 text-sm font-semibold">
+          {menuItems.map(item => (
+            <li key={item.id}>
+              <button
+                onClick={() => handleScroll(item.id)}
+                className="hover:text-blue-400 transition-colors duration-200"
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
         </ul>
 
-        {/* Mobile Hamburger Button */}
+        {/* Mobile Hamburger */}
         <button
           className="md:hidden flex items-center focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle Menu"
+          aria-expanded={isOpen}
         >
           <svg
             className="w-6 h-6"
@@ -88,19 +63,9 @@ const Navbar = () => {
             xmlns="http://www.w3.org/2000/svg"
           >
             {isOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
             ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             )}
           </svg>
         </button>
@@ -108,39 +73,16 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-gray-800 px-6 pb-6 space-y-4">
-          <button
-            onClick={() => handleScroll("home")}
-            className="block w-full text-left text-white hover:text-indigo-400 font-semibold"
-          >
-            Home
-          </button>
-          <button
-            onClick={() => handleScroll("about")}
-            className="block w-full text-left text-white hover:text-indigo-400 font-semibold"
-          >
-            About
-          </button>
-          <button
-            onClick={() => handleScroll("microaudit")}
-            className="block w-full text-left text-white hover:text-indigo-400 font-semibold"
-          >
-            Micro Audit
-          </button>
-          <Link
-            to="/portfolio"
-            onClick={() => setIsOpen(false)}
-            className="block w-full text-left text-indigo-400 font-semibold"
-          >
-            Portfolio
-          </Link>
-          <button
-            onClick={() => handleScroll("contact")}
-            className="block w-full text-left text-white hover:text-indigo-400 font-semibold"
-          >
-            Contact
-          </button>
-
+        <div className="md:hidden bg-gray-900 px-6 pb-6 space-y-4">
+          {menuItems.map(item => (
+            <button
+              key={item.id}
+              onClick={() => handleScroll(item.id)}
+              className="block w-full text-left text-white hover:text-blue-400 font-semibold py-2 border-b border-gray-800"
+            >
+              {item.label}
+            </button>
+          ))}
         </div>
       )}
     </nav>

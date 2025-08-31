@@ -1,44 +1,31 @@
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-400 py-6 ">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
-        
-        {/* Left: Copyright */}
-        <p className="text-sm">
-          © {new Date().getFullYear()} Hari Audit. All Rights Reserved.
+    <footer className="bg-gray-950 text-gray-400 py-8 border-t border-gray-800">
+      <div className="max-w-6xl mx-auto px-6 flex flex-col items-center space-y-4">
+        {/* Copyright */}
+        <p className="text-sm text-center">
+          © {new Date().getFullYear()} HariAuditKit. All Rights Reserved.
         </p>
 
-        {/* Center: Links */}
-        <div className="flex space-x-6 text-sm">
-          <Link to="/privacy" className="hover:text-indigo-400">
-            Privacy Policy
-          </Link>
-          <Link to="/terms" className="hover:text-indigo-400">
-            Terms & Conditions
-          </Link>
-        </div>
-
-        {/* Right: Social Icons */}
-        <div className="flex space-x-4 text-xl">
+        {/* Social Icons */}
+        <div className="flex space-x-6 text-2xl">
           <a
             href="https://www.linkedin.com/in/hari-suthan-01665433b/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-indigo-400"
+            className="hover:text-blue-400 transition-colors"
           >
             <FaLinkedin />
           </a>
           <a
-            href="mailto:hari.auditservice@gmail.com"
-            className="hover:text-indigo-400"
+            href="mailto:codehari662@gmail.com"
+            className="hover:text-green-400 transition-colors"
           >
             <MdEmail />
           </a>
-         
         </div>
       </div>
     </footer>
