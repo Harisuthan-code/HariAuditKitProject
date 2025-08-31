@@ -1,4 +1,4 @@
-import productImage from "../../public/images/Product image.png";
+import productImage from "../../public/images/Product image.webp";
 
 const BuySection = () => {
   return (
