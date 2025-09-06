@@ -7,9 +7,9 @@ const About = () => {
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950 -z-10"></div>
 
-      <div className="container mx-auto flex flex-col md:flex-row items-center md:space-x-12 relative z-10">
+      <div className="container mx-auto flex flex-col md:flex-row items-start md:space-x-12 relative z-10">
         {/* About Product Text */}
-        <div className="flex-1 text-center md:text-left">
+        <div className="flex-1 text-left">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-400">
             About HariAuditKit
           </h2>
