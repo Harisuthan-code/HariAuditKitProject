@@ -13,8 +13,6 @@ const Hero = () => {
     >
       {/* Strong dark overlay with slight gradient for readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80 -z-10"></div>
-
-      {/* Subtle blur/fade overlay */}
       <div className="absolute inset-0 backdrop-blur-sm -z-10"></div>
 
       {/* Top Head */}
@@ -35,13 +33,25 @@ const Hero = () => {
       </h2>
 
       {/* CTA */}
-      <div className="flex flex-col items-center gap-3">
-        <button
-          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-10 rounded-xl shadow-xl transition-transform duration-300 hover:scale-105 flex items-center gap-2 tracking-wide"
+      <div className="flex flex-col items-center gap-2">
+        <a
+          href="https://hariauditkit.lemonsqueezy.com/buy/1461b985-7339-4fc3-915e-7129fd1231e6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 mt-4 text-center"
         >
-          Get Now <span className="text-xl">📄</span>
-        </button>
-        <span className="text-gray-300 text-sm drop-shadow">
+          $16.55 <span className="line-through text-gray-300 ml-1">$23.17</span>
+        </a>
+
+        {/* Discount Code Box */}
+        <div className="mt-2 text-gray-300 text-sm md:text-base flex items-center gap-2">
+          <span>Use code:</span>
+          <div className="inline-block bg-gray-800 text-green-400 font-bold px-3 py-1 rounded-lg border border-gray-700">
+            EARLY10
+          </div>
+        </div>
+
+        <span className="text-gray-300 text-sm drop-shadow mt-1">
           Instant download • Actionable & ready to use ✅
         </span>
       </div>

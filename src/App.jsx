@@ -8,6 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import Terms from "./Comp/TermsAndCondition.jsx";
 import BuySection from "./Comp/Buy Section.jsx";
 import RefundPolicy from "./Comp/Refund.jsx";
+import PreviewSection from "./Comp/Preview.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Hero />
             <About />
             <Features />
+            <PreviewSection/>
             <BuySection/>
             <Contact />
             <Terms/>
