@@ -34,14 +34,14 @@ const Hero = () => {
 
       {/* CTA */}
       <div className="flex flex-col items-center gap-2">
-        <a
-          href="https://hariauditkit.lemonsqueezy.com/buy/1461b985-7339-4fc3-915e-7129fd1231e6"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 mt-4 text-center"
-        >
-          $16.55 <span className="line-through text-gray-300 ml-1">$23.17</span>
-        </a>
+       <a
+  href="https://hariauditkit.lemonsqueezy.com/buy/1461b985-7339-4fc3-915e-7129fd1231e6"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 mt-4 text-center"
+>
+  Get Now • $16.55 <span className="line-through text-gray-300 ml-1">$23.17</span>
+</a>
 
         {/* Discount Code Box */}
         <div className="mt-2 text-gray-300 text-sm md:text-base flex items-center gap-2">
@@ -60,3 +60,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
