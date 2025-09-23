@@ -28,19 +28,30 @@ const Hero = () => {
 
       {/* Tagline */}
       <h2 className="text-lg md:text-2xl font-medium text-gray-200 mb-8 max-w-3xl leading-relaxed tracking-wide drop-shadow-lg">
-        Learn & Prevent <span className="text-green-400 font-semibold">30+ Smart Contract Bugs</span> <br />
-        With <span className="text-blue-400 font-semibold">Checklists for Developers & Auditors</span>
+        Prevent <span className="text-green-400 font-semibold">30+ Smart Contract Bugs</span> <br />
+        Learn faster with <span className="text-blue-400 font-semibold">Checklists & Practice Contracts</span>
       </h2>
 
       {/* CTA */}
-      <div className="flex flex-col items-center gap-2">
+      <div className="flex flex-col items-center gap-3">
+        {/* Main Buy Button */}
         <a
           href="https://hariauditkit.lemonsqueezy.com/buy/1461b985-7339-4fc3-915e-7129fd1231e6"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 mt-4 text-center"
+          className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 text-center"
         >
-          $9.99 <span className="line-through text-gray-300 ml-1">$16.99</span>
+          Get Full Kit – $9.99 <span className="line-through text-gray-300 ml-1">$16.99</span>
+        </a>
+
+        {/* Secondary CTA (Preview) */}
+        <a
+          href="https://drive.google.com/file/d/1XbgOQmV6LTQ-Fghc3-gpNJcKABfWtvsI/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-300"
+        >
+          📥 Free Preview (5 Bugs + 1 Contract)
         </a>
 
         {/* Discount Code Box */}
