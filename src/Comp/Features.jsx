@@ -1,26 +1,35 @@
 const features = [
   {
-    icon: "💡",
-    title: "Real-World Examples",
-    description: "Includes findings from actual smart contracts to help you learn from real scenarios.",
+    icon: "🐞",
+    title: "30+ Bug Methods",
+    description: "Master real vulnerability patterns with clear explanations and code snippets.",
   },
   {
-    icon: "📖",
-    title: "Understand Bugs & Fixes",
-    description: "Learn from real exploits and see how they were fixed in practice.",
+    icon: "📂",
+    title: "3 Practice Contracts",
+    description: "Sharpen your auditing skills with real-world style contracts designed for hands-on practice.",
   },
   {
-    icon: "👨‍💻",
-    title: "Developer Checklist",
-    description: "Step-by-step questions to answer while building to avoid common smart contract bugs.",
+    icon: "⚡",
+    title: "Structured Learning",
+    description: "Skip endless report/blog reading — follow a focused path to build strong foundations fast.",
   },
   {
-    icon: "🔍",
-    title: "Auditor Checklist",
-    description: "Guided questions to help you systematically find vulnerabilities during audits.",
+    icon: "🔑",
+    title: "Stand Out",
+    description: "For developers: write safer contracts. For auditors: build the skills to move into competitive audits.",
+  },
+  {
+    icon: "👀",
+    title: "Preview Included",
+    description: "Try before you buy: 5 bugs + 1 practice contract to see how the kit looks and feels.",
+  },
+  {
+    icon: "✅",
+    title: "Checklists Included",
+    description: "Developer & Auditor yes/no checklists so you never skip critical security checks.",
   },
 ];
-
 
 const Features = () => {
   return (
@@ -36,11 +45,11 @@ const Features = () => {
           Features & Benefits
         </h2>
         <p className="max-w-2xl mx-auto text-gray-300 text-lg">
-          Why HariAuditKit is the ultimate checklist for developers and auditors.
+          Everything you need to learn smarter, save time, and build real bug-hunting skills.
         </p>
       </div>
 
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 relative z-10">
         {features.map(({ icon, title, description }, idx) => (
           <div
             key={idx}
