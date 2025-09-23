@@ -72,7 +72,7 @@ const BuySection = () => {
           <div className="mt-10 space-y-2">
             <div className="text-gray-400 text-lg line-through">LKR 5,100.00</div>
             <div className="text-4xl md:text-5xl font-bold text-white tracking-wide">
-              LKR 3,100.00 <span className="text-gray-400 text-lg font-normal">USD</span>
+              LKR 3,100.00 <span className="text-gray-400 text-lg font-normal">LKR</span>
             </div>
 
             {/* Discount Notice */}
@@ -128,4 +128,5 @@ const BuySection = () => {
 };
 
 export default BuySection;
+
 
