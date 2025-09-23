@@ -17,43 +17,70 @@ const BuySection = () => {
           </h2>
 
           <p className="text-gray-300 text-lg leading-relaxed">
-            Learn & prevent <span className="text-green-400 font-semibold">30+ smart contract bugs</span> 
-            with a resource built from real-world contracts and practical auditing experience.
+            Learn & prevent{" "}
+            <span className="text-green-400 font-semibold">30+ smart contract bugs</span>{" "}
+            with a structured kit built from real-world vulnerabilities and practical
+            auditing experience.
           </p>
 
+          {/* What’s Inside */}
+          <div className="bg-gray-900 border border-gray-700 rounded-xl p-5 space-y-3 shadow-md">
+            <h3 className="text-xl font-semibold text-green-400 mb-2">
+              What You’ll Get
+            </h3>
+            <ul className="list-disc list-inside text-gray-300 space-y-2 text-base">
+              <li>30+ bug methods explained with code and fixes</li>
+              <li>3 practical contracts for hands-on auditing</li>
+              <li>Developer & Auditor checklists (yes/no guides)</li>
+              <li>Free preview: 5 bugs + 1 practice contract</li>
+              <li>Lifetime updates — one-time payment</li>
+            </ul>
+          </div>
+
           {/* Who it's for / not for */}
-          <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-6">
             <div>
-              <h3 className="text-xl font-semibold text-green-400 mb-2 tracking-wide">
-                Who It's For
+              <h3 className="text-lg font-semibold text-green-400 mb-2 tracking-wide">
+                ✅ Who It’s For
               </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li><strong>Developers:</strong> Avoid common mistakes and start writing safer contracts.</li>
-                <li><strong>Beginner Auditors:</strong> See how real-world bugs look and practice spotting them without endless searching.</li>
+              <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
+                <li>
+                  <strong>Developers:</strong> Write safer contracts & stand out with bug knowledge.
+                </li>
+                <li>
+                  <strong>Beginner Auditors:</strong> Build a strong foundation and move toward competitive audits faster.
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-red-400 mb-2 tracking-wide">
-                Who It's Not For
+              <h3 className="text-lg font-semibold text-red-400 mb-2 tracking-wide">
+                ❌ Who It’s Not For
               </h3>
-              <ul className="list-disc list-inside text-gray-300 space-y-2">
-                <li><strong>Experienced Auditors:</strong> If you already audit at a high level, most of this will feel familiar.</li>
-                <li><strong>Absolute Beginners:</strong> If you’ve never touched Solidity, learn the basics first—then come back to this.</li>
+              <ul className="list-disc list-inside text-gray-300 space-y-2 text-sm">
+                <li>
+                  <strong>Experienced Auditors:</strong> Already familiar with most of these patterns.
+                </li>
+                <li>
+                  <strong>Absolute Beginners:</strong> If you’ve never touched Solidity, learn basics first.
+                </li>
               </ul>
             </div>
           </div>
 
-          {/* Price */}
+          {/* Price Section */}
           <div className="mt-10 space-y-2">
-            <div className="text-gray-400 text-lg line-through">$23.17 USD</div>
+            <div className="text-gray-400 text-lg line-through">$16.99 USD</div>
             <div className="text-4xl md:text-5xl font-bold text-white tracking-wide">
-              $16.55 <span className="text-gray-400 text-lg font-normal">USD</span>
+              $9.99 <span className="text-gray-400 text-lg font-normal">USD</span>
             </div>
 
             {/* Discount Notice */}
             <div className="mt-2 text-gray-300 text-sm md:text-base space-y-1">
-              <p>🎉 First 10 buyers get a <span className="text-green-400 font-semibold">29% discount</span></p>
+              <p>
+                🎉 First 10 buyers get a{" "}
+                <span className="text-green-400 font-semibold">discount</span>
+              </p>
               <div className="inline-block bg-gray-800 text-green-400 font-bold px-3 py-1 rounded-lg border border-gray-700 mt-1">
                 Use code: <span className="uppercase">EARLY10</span>
               </div>
@@ -75,8 +102,8 @@ const BuySection = () => {
           </a>
         </div>
 
-        {/* Right: Product Image */}
-        <div className="flex-1 flex justify-center md:justify-end mt-10 md:mt-0">
+        {/* Right: Product Image + Preview Button */}
+        <div className="flex-1 flex flex-col items-center md:items-end mt-10 md:mt-0 space-y-6">
           <div className="w-72 md:w-96 rounded-xl shadow-2xl overflow-hidden border border-gray-700">
             <img
               src={productImage}
@@ -84,6 +111,16 @@ const BuySection = () => {
               className="w-full h-full object-cover"
             />
           </div>
+
+          {/* Preview Download Button BELOW image */}
+          <a
+            href="https://drive.google.com/file/d/1XbgOQmV6LTQ-Fghc3-gpNJcKABfWtvsI/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-xl shadow-lg transition duration-300"
+          >
+            📥 Download Free Preview
+          </a>
         </div>
       </div>
     </section>
