@@ -41,7 +41,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 text-center"
         >
-          Get Full Kit – $9.99 <span className="line-through text-gray-300 ml-1">$16.99</span>
+          Get Full Kit – LKR 3,100.00 <span className="line-through text-gray-300 ml-1">LKR 5,100.00</span>
         </a>
 
         {/* Secondary CTA (Preview) */}
@@ -71,3 +71,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
