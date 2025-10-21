@@ -70,20 +70,9 @@ const BuySection = () => {
 
           {/* Price Section */}
           <div className="mt-10 space-y-2">
-            <div className="text-gray-400 text-lg line-through">LKR 5,100.00</div>
+            <div className="text-gray-400 text-lg line-through">$ 15.99</div>
             <div className="text-4xl md:text-5xl font-bold text-white tracking-wide">
-              LKR 3,100.00
-            </div>
-
-            {/* Discount Notice */}
-            <div className="mt-2 text-gray-300 text-sm md:text-base space-y-1">
-              <p>
-                🎉 First 10 buyers get a{" "}
-                <span className="text-green-400 font-semibold">discount</span>
-              </p>
-              <div className="inline-block bg-gray-800 text-green-400 font-bold px-3 py-1 rounded-lg border border-gray-700 mt-1">
-                Use code: <span className="uppercase">EARLY10</span>
-              </div>
+              $ 6.94
             </div>
 
             <p className="text-gray-400 text-sm mt-2">
@@ -128,6 +117,7 @@ const BuySection = () => {
 };
 
 export default BuySection;
+
 
 
 
