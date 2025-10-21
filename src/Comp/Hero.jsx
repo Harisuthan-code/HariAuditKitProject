@@ -41,7 +41,7 @@ const Hero = () => {
           rel="noopener noreferrer"
           className="inline-block bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-10 rounded-xl shadow-lg transition-transform duration-300 hover:scale-105 text-center"
         >
-          Get Full Kit – LKR 3,100.00 <span className="line-through text-gray-300 ml-1">LKR 5,100.00</span>
+          Get Full Kit – $ 6.94 <span className="line-through text-gray-300 ml-1">$ 15.99</span>
         </a>
 
         {/* Secondary CTA (Preview) */}
@@ -55,12 +55,6 @@ const Hero = () => {
         </a>
 
         {/* Discount Code Box */}
-        <div className="mt-2 text-gray-300 text-sm md:text-base flex items-center gap-2">
-          <span>First 10 Buyers - Use code:</span>
-          <div className="inline-block bg-gray-800 text-green-400 font-bold px-3 py-1 rounded-lg border border-gray-700">
-            EARLY10
-          </div>
-        </div>
 
         <span className="text-gray-300 text-sm drop-shadow mt-1">
           Instant download • Actionable & ready to use ✅
@@ -71,4 +65,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
 
